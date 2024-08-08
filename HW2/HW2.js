@@ -80,13 +80,13 @@ for(i=0; i < users.length; i++) {
 
 //описати масив, в якому буде зберігатись інформація про температуру вранці, вдень і ввечері за термін в 7 днів.
 let temperaturesForWeek = [
-    {day:1, morningT:-2, afternoonT:2, evening:0},
-    {day:2, morningT:-5, afternoonT:0, evening:-2},
-    {day:3, morningT:-7, afternoonT:0, evening:-3},
-    {day:4, morningT:0, afternoonT:2, evening:0},
-    {day:5, morningT:1, afternoonT:3, evening:1},
-    {day:6, morningT:2, afternoonT:4, evening:2},
-    {day:7, morningT:3, afternoonT:5, evening:3}
+    {day:1, morningT:-2, afternoonT:2, eveningT:0},
+    {day:2, morningT:-5, afternoonT:0, eveningT:-2},
+    {day:3, morningT:-7, afternoonT:0, eveningT:-3},
+    {day:4, morningT:0, afternoonT:2, eveningT:0},
+    {day:5, morningT:1, afternoonT:3, eveningT:1},
+    {day:6, morningT:2, afternoonT:4, eveningT:2},
+    {day:7, morningT:3, afternoonT:5, eveningT:3}
 ]
 
 //- Є змінна х, якій ви надаєте довільне числове значення.
