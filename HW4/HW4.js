@@ -17,7 +17,7 @@ function squareCylinder (radius, height) {
 //створити функцію яка приймає масив та виводить кожен його елемент
 
 function ArrElement (arr){
-    for (i=0; i< arr.length; i++){
+    for (let i=0; i< arr.length; i++){
         console.log(arr[i]);
     }
 }
@@ -41,7 +41,7 @@ function createList(text) {
 
 function  createListN (text,numberOfSections){
     document.write('<ul>');
-    for ( i = 1; i <= numberOfSections; i++) {
+    for (let i = 1; i <= numberOfSections; i++) {
         document.write(`<li>${text}</li>`);
     }
     document.write('</ul>');
@@ -50,7 +50,7 @@ function  createListN (text,numberOfSections){
 
 function createListArr (arr){
     document.write(`<ul>`)
-    for (i=0; i< arr.length; i++){
+    for (let i=0; i< arr.length; i++){
         document.write(`<li> ${arr[i]} </li>`)
     }
     document.write(`</ul>`)
@@ -58,7 +58,7 @@ function createListArr (arr){
 //створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
 function displayObjects (arr){
-    for(i=0; i< arr.length; i++){
+    for(let i=0; i< arr.length; i++){
         document.write(`<div>
 <p>${arr[i].id}</p>
 <p>${arr[i].name}</p>
@@ -70,7 +70,7 @@ function displayObjects (arr){
 
 function minArr (arr){
     let min = arr[0];
-    for (i=1; i <arr.length; i++){
+    for (let i=1; i <arr.length; i++){
         if(arr[i] < min){
             min = arr[i];
         }
@@ -81,7 +81,7 @@ function minArr (arr){
 
 function sumArr (arr){
     let sum = 0;
-    for (i=0; i<arr.length; i++){
+    for (let i=0; i<arr.length; i++){
         sum = sum+arr[i];
     }
     return sum;
@@ -96,7 +96,7 @@ function swap (arr, index1, index2){
 //Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 
 function exchange(sumUAH, currencyValues, exchangeCurrency) {
-    for (i=0; i < currencyValues.length; i++){
+    for (let i=0; i < currencyValues.length; i++){
         if(currencyValues[i].currency === exchangeCurrency){
             return sumUAH / currencyValues[i].value;
         }
