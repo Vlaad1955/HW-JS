@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+
+<script>
+    let date = new Date();
+    let dateUser = JSON.parse(localStorage.getItem('sessionsList')) || [];
+    dateUser.push(date);
+    localStorage.setItem(`sessionsList`, JSON.stringify(dateUser));
+</script>
+</body>
+</html>
